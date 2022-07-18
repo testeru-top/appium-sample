@@ -20,7 +20,7 @@ import java.time.Duration;
  * @create: 2022/7/14 10:53
  */
 public class CapabilitiesBasic_01_Test {
-    //1、启动雪球
+    //1、启动
     AndroidDriver driver;
     @Test
     public void start() throws MalformedURLException {
