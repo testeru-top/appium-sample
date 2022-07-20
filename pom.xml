@@ -32,7 +32,7 @@
         <slf4j.version>2.0.0-alpha7</slf4j.version>
         <logback.version>1.3.0-alpha16</logback.version>
         <!--allure报告-->
-        <allure.version>2.17.2</allure.version>
+<!--        <allure.version>2.18.1</allure.version>-->
         <aspectj.version>1.9.9.1</aspectj.version>
         <allure.cmd.download.url>
             https://repo.maven.apache.org/maven2/io/qameta/allure/allure-commandline
@@ -112,11 +112,11 @@
             <version>${logback.version}</version>
         </dependency>
         <!--allure报告-->
-        <dependency>
-            <groupId>io.qameta.allure</groupId>
-            <artifactId>allure-junit5</artifactId>
-            <version>${allure.version}</version>
-        </dependency>
+<!--        <dependency>-->
+<!--            <groupId>io.qameta.allure</groupId>-->
+<!--            <artifactId>allure-junit5</artifactId>-->
+<!--            <version>${allure.version}</version>-->
+<!--        </dependency>-->
 
         <!--appium-->
         <dependency>
