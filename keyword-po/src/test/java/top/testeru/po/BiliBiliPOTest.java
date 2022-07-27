@@ -1,24 +1,25 @@
 package top.testeru.po;
 
 
-import io.appium.java_client.remote.AndroidMobileCapabilityType;
-import io.appium.java_client.remote.MobileCapabilityType;
+import com.fasterxml.jackson.core.type.TypeReference;
+import com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.dataformat.yaml.YAMLFactory;
 import io.qameta.allure.Description;
 import org.junit.jupiter.api.*;
 import org.junit.jupiter.params.ParameterizedTest;
-import org.junit.jupiter.params.provider.Arguments;
 import org.junit.jupiter.params.provider.MethodSource;
-import org.openqa.selenium.remote.DesiredCapabilities;
+import top.testeru.entity.SearchDto;
+import top.testeru.entity.SearchListDto;
 import top.testeru.page.BiliApp;
 import top.testeru.page.SearchResultPage;
 
-import java.net.MalformedURLException;
-import java.util.stream.Stream;
+import java.io.File;
+import java.io.IOException;
+import java.util.List;
 
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.core.Is.is;
 import static org.hamcrest.core.IsEqual.equalTo;
-import static org.hamcrest.number.IsCloseTo.closeTo;
 
 /**
  * @program: appium-sample
@@ -69,24 +70,38 @@ public class BiliBiliPOTest {
     @MethodSource
     @Description("search Param Person Num.")
     @DisplayName("搜索用例参数化")
-    public void testSearchP(String search, int price) {
+    public void testSearchP(SearchDto searchDto) {
         //获取的观看人数的结果
         searchResultPage = biliApp
                 .toSearch()
-                .toSearchResultPage(search);
+                .toSearchResultPage(searchDto.getSearch());
         String num = searchResultPage
                 .result();
-        assertThat(Double.valueOf(num), is(equalTo(Double.valueOf(num))));
+        assertThat(Double.valueOf(num), is(equalTo(Double.valueOf(searchDto.getNum()))));
 
 //        assertThat(Double.valueOf(num), is(closeTo(price * 1.3, price * 0.3)));
     }
 
-    static Stream<Arguments> testSearchP(){
-        return Stream.of(
-                Arguments.arguments("考研",100),
-                Arguments.arguments("测试",100)
-        );
+    static List<SearchDto> testSearchP(){
+        return getYaml().getDatas();
     }
+    private static SearchListDto getYaml() {
+        SearchListDto data;
+        ObjectMapper objectMapper = new ObjectMapper(new YAMLFactory());
+        TypeReference<SearchListDto> typeReference = new TypeReference<SearchListDto>() {
+        };
+        try {
+            data = objectMapper.readValue(
+                    new File("src/test/resources/data/search.yaml"),
+                    typeReference);
+
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+        return data;
+
+    }
+
 
 
 

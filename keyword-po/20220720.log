@@ -1,0 +1,105 @@
+2022-07-20 15:17:07,196 ERROR io.qameta.allure.AllureLifecycle.startStep(457) -- Could not start step: no test case running
+2022-07-20 15:17:07,199 INFO  top.testeru.key.KeyWords.start(39) -- 开始启动app
+2022-07-20 15:17:18,870 ERROR io.qameta.allure.AllureLifecycle.updateStep(497) -- Could not update step: no step running
+2022-07-20 15:17:18,871 ERROR io.qameta.allure.AllureLifecycle.stopStep(532) -- Could not stop step: no step running
+2022-07-20 15:17:18,949 INFO  top.testeru.key.KeyWords.toSearch(79) -- 点击搜索按钮跳转到搜索页面
+2022-07-20 15:17:18,950 INFO  top.testeru.key.KeyWords.click(72) -- click element : By.xpath: //android.widget.LinearLayout[@content-desc="搜索栏，按钮"] 
+2022-07-20 15:17:21,066 INFO  top.testeru.key.KeyWords.toSearchResultPage(29) -- 输入内容进行搜索
+2022-07-20 15:17:23,784 INFO  top.testeru.key.KeyWords.sendKeys(88) -- element : AppiumBy.id: tv.danmaku.bili:id/search_src_text  , send : 考研
+2022-07-20 15:17:23,784 INFO  top.testeru.key.KeyWords.click(72) -- click element : AppiumBy.id: tv.danmaku.bili:id/title 
+2022-07-20 15:17:25,564 INFO  top.testeru.key.KeyWords.result(22) -- 获取搜索结果的观看直播的人数
+2022-07-20 15:17:25,564 INFO  top.testeru.key.KeyWords.click(76) -- click elements : AppiumBy.id: tv.danmaku.bili:id/tab_title , index is : 2
+2022-07-20 15:17:25,565 INFO  top.testeru.key.KeyWords.finds(68) -- find element : AppiumBy.id: tv.danmaku.bili:id/tab_title 
+2022-07-20 15:17:29,391 INFO  top.testeru.key.KeyWords.getText(81) -- element : AppiumBy.id: tv.danmaku.bili:id/watched_text  , text : 66
+2022-07-20 15:17:29,402 INFO  top.testeru.key.KeyWords.click(72) -- click element : By.xpath: //*[@text="取消"] 
+2022-07-20 15:17:32,350 INFO  top.testeru.key.KeyWords.toSearch(79) -- 点击搜索按钮跳转到搜索页面
+2022-07-20 15:17:32,351 INFO  top.testeru.key.KeyWords.click(72) -- click element : By.xpath: //android.widget.LinearLayout[@content-desc="搜索栏，按钮"] 
+2022-07-20 15:17:34,644 INFO  top.testeru.key.KeyWords.toSearchResultPage(29) -- 输入内容进行搜索
+2022-07-20 15:17:38,235 INFO  top.testeru.key.KeyWords.sendKeys(88) -- element : AppiumBy.id: tv.danmaku.bili:id/search_src_text  , send : 测试
+2022-07-20 15:17:38,236 INFO  top.testeru.key.KeyWords.click(72) -- click element : AppiumBy.id: tv.danmaku.bili:id/title 
+2022-07-20 15:17:39,721 INFO  top.testeru.key.KeyWords.result(22) -- 获取搜索结果的观看直播的人数
+2022-07-20 15:17:39,722 INFO  top.testeru.key.KeyWords.click(76) -- click elements : AppiumBy.id: tv.danmaku.bili:id/tab_title , index is : 2
+2022-07-20 15:17:39,722 INFO  top.testeru.key.KeyWords.finds(68) -- find element : AppiumBy.id: tv.danmaku.bili:id/tab_title 
+2022-07-20 15:17:43,631 INFO  top.testeru.key.KeyWords.getText(81) -- element : AppiumBy.id: tv.danmaku.bili:id/watched_text  , text : 156
+2022-07-20 15:17:43,632 INFO  top.testeru.key.KeyWords.click(72) -- click element : By.xpath: //*[@text="取消"] 
+2022-07-20 15:17:47,143 INFO  top.testeru.key.KeyWords.toSearch(79) -- 点击搜索按钮跳转到搜索页面
+2022-07-20 15:17:47,144 INFO  top.testeru.key.KeyWords.click(72) -- click element : By.xpath: //android.widget.LinearLayout[@content-desc="搜索栏，按钮"] 
+2022-07-20 15:17:49,516 INFO  top.testeru.key.KeyWords.toSearchResultPage(29) -- 输入内容进行搜索
+2022-07-20 15:17:52,290 INFO  top.testeru.key.KeyWords.sendKeys(88) -- element : AppiumBy.id: tv.danmaku.bili:id/search_src_text  , send : 法律
+2022-07-20 15:17:52,290 INFO  top.testeru.key.KeyWords.click(72) -- click element : AppiumBy.id: tv.danmaku.bili:id/title 
+2022-07-20 15:17:53,711 INFO  top.testeru.key.KeyWords.result(22) -- 获取搜索结果的观看直播的人数
+2022-07-20 15:17:53,711 INFO  top.testeru.key.KeyWords.click(76) -- click elements : AppiumBy.id: tv.danmaku.bili:id/tab_title , index is : 2
+2022-07-20 15:17:53,711 INFO  top.testeru.key.KeyWords.finds(68) -- find element : AppiumBy.id: tv.danmaku.bili:id/tab_title 
+2022-07-20 15:17:56,577 INFO  top.testeru.key.KeyWords.getText(81) -- element : AppiumBy.id: tv.danmaku.bili:id/watched_text  , text : 2
+2022-07-20 15:17:56,578 INFO  top.testeru.key.KeyWords.click(72) -- click element : By.xpath: //*[@text="取消"] 
+2022-07-20 15:17:59,066 INFO  top.testeru.key.KeyWords.quite(99) -- app quite
+2022-07-20 15:18:23,206 ERROR io.qameta.allure.AllureLifecycle.startStep(457) -- Could not start step: no test case running
+2022-07-20 15:18:23,209 INFO  top.testeru.key.KeyWords.start(39) -- 开始启动app
+2022-07-20 15:18:34,770 ERROR io.qameta.allure.AllureLifecycle.updateStep(497) -- Could not update step: no step running
+2022-07-20 15:18:34,771 ERROR io.qameta.allure.AllureLifecycle.stopStep(532) -- Could not stop step: no step running
+2022-07-20 15:18:34,848 INFO  top.testeru.key.KeyWords.toSearch(79) -- 点击搜索按钮跳转到搜索页面
+2022-07-20 15:18:34,849 INFO  top.testeru.key.KeyWords.click(72) -- click element : By.xpath: //android.widget.LinearLayout[@content-desc="搜索栏，按钮"] 
+2022-07-20 15:18:36,925 INFO  top.testeru.key.KeyWords.toSearchResultPage(29) -- 输入内容进行搜索
+2022-07-20 15:18:40,166 INFO  top.testeru.key.KeyWords.sendKeys(88) -- element : AppiumBy.id: tv.danmaku.bili:id/search_src_text  , send : 考研
+2022-07-20 15:18:40,166 INFO  top.testeru.key.KeyWords.click(72) -- click element : AppiumBy.id: tv.danmaku.bili:id/title 
+2022-07-20 15:18:41,741 INFO  top.testeru.key.KeyWords.result(22) -- 获取搜索结果的观看直播的人数
+2022-07-20 15:18:41,741 INFO  top.testeru.key.KeyWords.click(76) -- click elements : AppiumBy.id: tv.danmaku.bili:id/tab_title , index is : 2
+2022-07-20 15:18:41,742 INFO  top.testeru.key.KeyWords.finds(68) -- find element : AppiumBy.id: tv.danmaku.bili:id/tab_title 
+2022-07-20 15:18:45,752 INFO  top.testeru.key.KeyWords.getText(81) -- element : AppiumBy.id: tv.danmaku.bili:id/watched_text  , text : 66
+2022-07-20 15:18:45,766 INFO  top.testeru.key.KeyWords.click(72) -- click element : By.xpath: //*[@text="取消"] 
+2022-07-20 15:18:48,699 INFO  top.testeru.key.KeyWords.toSearch(79) -- 点击搜索按钮跳转到搜索页面
+2022-07-20 15:18:48,700 INFO  top.testeru.key.KeyWords.click(72) -- click element : By.xpath: //android.widget.LinearLayout[@content-desc="搜索栏，按钮"] 
+2022-07-20 15:18:51,011 INFO  top.testeru.key.KeyWords.toSearchResultPage(29) -- 输入内容进行搜索
+2022-07-20 15:18:54,381 INFO  top.testeru.key.KeyWords.sendKeys(88) -- element : AppiumBy.id: tv.danmaku.bili:id/search_src_text  , send : 测试
+2022-07-20 15:18:54,382 INFO  top.testeru.key.KeyWords.click(72) -- click element : AppiumBy.id: tv.danmaku.bili:id/title 
+2022-07-20 15:18:55,953 INFO  top.testeru.key.KeyWords.result(22) -- 获取搜索结果的观看直播的人数
+2022-07-20 15:18:55,953 INFO  top.testeru.key.KeyWords.click(76) -- click elements : AppiumBy.id: tv.danmaku.bili:id/tab_title , index is : 2
+2022-07-20 15:18:55,954 INFO  top.testeru.key.KeyWords.finds(68) -- find element : AppiumBy.id: tv.danmaku.bili:id/tab_title 
+2022-07-20 15:19:00,425 INFO  top.testeru.key.KeyWords.getText(81) -- element : AppiumBy.id: tv.danmaku.bili:id/watched_text  , text : 156
+2022-07-20 15:19:00,427 INFO  top.testeru.key.KeyWords.click(72) -- click element : By.xpath: //*[@text="取消"] 
+2022-07-20 15:19:03,447 INFO  top.testeru.key.KeyWords.toSearch(79) -- 点击搜索按钮跳转到搜索页面
+2022-07-20 15:19:03,448 INFO  top.testeru.key.KeyWords.click(72) -- click element : By.xpath: //android.widget.LinearLayout[@content-desc="搜索栏，按钮"] 
+2022-07-20 15:19:06,010 INFO  top.testeru.key.KeyWords.toSearchResultPage(29) -- 输入内容进行搜索
+2022-07-20 15:19:09,294 INFO  top.testeru.key.KeyWords.sendKeys(88) -- element : AppiumBy.id: tv.danmaku.bili:id/search_src_text  , send : 法律
+2022-07-20 15:19:09,295 INFO  top.testeru.key.KeyWords.click(72) -- click element : AppiumBy.id: tv.danmaku.bili:id/title 
+2022-07-20 15:19:10,916 INFO  top.testeru.key.KeyWords.result(22) -- 获取搜索结果的观看直播的人数
+2022-07-20 15:19:10,916 INFO  top.testeru.key.KeyWords.click(76) -- click elements : AppiumBy.id: tv.danmaku.bili:id/tab_title , index is : 2
+2022-07-20 15:19:10,917 INFO  top.testeru.key.KeyWords.finds(68) -- find element : AppiumBy.id: tv.danmaku.bili:id/tab_title 
+2022-07-20 15:19:13,950 INFO  top.testeru.key.KeyWords.getText(81) -- element : AppiumBy.id: tv.danmaku.bili:id/watched_text  , text : 2
+2022-07-20 15:19:13,951 INFO  top.testeru.key.KeyWords.click(72) -- click element : By.xpath: //*[@text="取消"] 
+2022-07-20 15:19:16,644 INFO  top.testeru.key.KeyWords.quite(99) -- app quite
+2022-07-20 15:20:40,529 ERROR io.qameta.allure.AllureLifecycle.startStep(457) -- Could not start step: no test case running
+2022-07-20 15:20:40,532 INFO  top.testeru.key.KeyWords.start(39) -- 开始启动app
+2022-07-20 15:20:52,225 ERROR io.qameta.allure.AllureLifecycle.updateStep(497) -- Could not update step: no step running
+2022-07-20 15:20:52,226 ERROR io.qameta.allure.AllureLifecycle.stopStep(532) -- Could not stop step: no step running
+2022-07-20 15:20:52,311 INFO  top.testeru.key.KeyWords.toSearch(79) -- 点击搜索按钮跳转到搜索页面
+2022-07-20 15:20:52,313 INFO  top.testeru.key.KeyWords.click(72) -- click element : By.xpath: //android.widget.LinearLayout[@content-desc="搜索栏，按钮"] 
+2022-07-20 15:20:54,201 INFO  top.testeru.key.KeyWords.toSearchResultPage(29) -- 输入内容进行搜索
+2022-07-20 15:20:57,034 INFO  top.testeru.key.KeyWords.sendKeys(88) -- element : AppiumBy.id: tv.danmaku.bili:id/search_src_text  , send : 考研
+2022-07-20 15:20:57,035 INFO  top.testeru.key.KeyWords.click(72) -- click element : AppiumBy.id: tv.danmaku.bili:id/title 
+2022-07-20 15:20:58,963 INFO  top.testeru.key.KeyWords.result(22) -- 获取搜索结果的观看直播的人数
+2022-07-20 15:20:58,963 INFO  top.testeru.key.KeyWords.click(76) -- click elements : AppiumBy.id: tv.danmaku.bili:id/tab_title , index is : 2
+2022-07-20 15:20:58,964 INFO  top.testeru.key.KeyWords.finds(68) -- find element : AppiumBy.id: tv.danmaku.bili:id/tab_title 
+2022-07-20 15:21:02,972 INFO  top.testeru.key.KeyWords.getText(81) -- element : AppiumBy.id: tv.danmaku.bili:id/watched_text  , text : 66
+2022-07-20 15:21:02,979 INFO  top.testeru.key.KeyWords.click(72) -- click element : By.xpath: //*[@text="取消"] 
+2022-07-20 15:21:05,887 INFO  top.testeru.key.KeyWords.toSearch(79) -- 点击搜索按钮跳转到搜索页面
+2022-07-20 15:21:05,888 INFO  top.testeru.key.KeyWords.click(72) -- click element : By.xpath: //android.widget.LinearLayout[@content-desc="搜索栏，按钮"] 
+2022-07-20 15:21:08,198 INFO  top.testeru.key.KeyWords.toSearchResultPage(29) -- 输入内容进行搜索
+2022-07-20 15:21:11,605 INFO  top.testeru.key.KeyWords.sendKeys(88) -- element : AppiumBy.id: tv.danmaku.bili:id/search_src_text  , send : 测试
+2022-07-20 15:21:11,606 INFO  top.testeru.key.KeyWords.click(72) -- click element : AppiumBy.id: tv.danmaku.bili:id/title 
+2022-07-20 15:21:13,368 INFO  top.testeru.key.KeyWords.result(22) -- 获取搜索结果的观看直播的人数
+2022-07-20 15:21:13,369 INFO  top.testeru.key.KeyWords.click(76) -- click elements : AppiumBy.id: tv.danmaku.bili:id/tab_title , index is : 2
+2022-07-20 15:21:13,369 INFO  top.testeru.key.KeyWords.finds(68) -- find element : AppiumBy.id: tv.danmaku.bili:id/tab_title 
+2022-07-20 15:21:17,480 INFO  top.testeru.key.KeyWords.getText(81) -- element : AppiumBy.id: tv.danmaku.bili:id/watched_text  , text : 157
+2022-07-20 15:21:17,481 INFO  top.testeru.key.KeyWords.click(72) -- click element : By.xpath: //*[@text="取消"] 
+2022-07-20 15:21:20,747 INFO  top.testeru.key.KeyWords.toSearch(79) -- 点击搜索按钮跳转到搜索页面
+2022-07-20 15:21:20,748 INFO  top.testeru.key.KeyWords.click(72) -- click element : By.xpath: //android.widget.LinearLayout[@content-desc="搜索栏，按钮"] 
+2022-07-20 15:21:22,123 INFO  top.testeru.key.KeyWords.toSearchResultPage(29) -- 输入内容进行搜索
+2022-07-20 15:21:25,413 INFO  top.testeru.key.KeyWords.sendKeys(88) -- element : AppiumBy.id: tv.danmaku.bili:id/search_src_text  , send : 法律
+2022-07-20 15:21:25,414 INFO  top.testeru.key.KeyWords.click(72) -- click element : AppiumBy.id: tv.danmaku.bili:id/title 
+2022-07-20 15:21:28,524 INFO  top.testeru.key.KeyWords.result(22) -- 获取搜索结果的观看直播的人数
+2022-07-20 15:21:28,524 INFO  top.testeru.key.KeyWords.click(76) -- click elements : AppiumBy.id: tv.danmaku.bili:id/tab_title , index is : 2
+2022-07-20 15:21:28,524 INFO  top.testeru.key.KeyWords.finds(68) -- find element : AppiumBy.id: tv.danmaku.bili:id/tab_title 
+2022-07-20 15:21:30,272 INFO  top.testeru.key.KeyWords.getText(81) -- element : AppiumBy.id: tv.danmaku.bili:id/watched_text  , text : 2
+2022-07-20 15:21:30,273 INFO  top.testeru.key.KeyWords.click(72) -- click element : By.xpath: //*[@text="取消"] 
+2022-07-20 15:21:33,100 INFO  top.testeru.key.KeyWords.quite(99) -- app quite
