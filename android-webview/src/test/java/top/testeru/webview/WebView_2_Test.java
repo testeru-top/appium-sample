@@ -1,15 +1,13 @@
 package top.testeru.webview;
 
-import io.appium.java_client.AppiumBy;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import top.testeru.Base2Test;
 import top.testeru.BaseTest;
 
-import java.util.Arrays;
 import java.util.List;
 import java.util.Set;
-import java.util.stream.Collectors;
-import java.util.stream.Stream;
 
 import static java.lang.Thread.sleep;
 
@@ -20,45 +18,50 @@ import static java.lang.Thread.sleep;
  * @Version 1.0
  * @create: 2022/7/26 14:51
  */
-public class WebView_1_Test extends BaseTest {
+public class WebView_2_Test extends Base2Test {
     @Test
     public void getContenct(){
-        //雪球首页是否有webview页面
-//        logger.info("雪球首页：{}",driver.getContextHandles());//[NATIVE_APP]
-//        driver.findElement(AppiumBy.xpath("//*[@text=\"股票\"]")).click();
-//        logger.info("股票页面：{}",driver.getContextHandles());//[NATIVE_APP]
-//        driver.findElement(AppiumBy.xpath("//*[@text=\"招商银行\"]")).click();
-//        logger.info("股票页面：{}",driver.getContextHandles());//[NATIVE_APP]
-//        driver.findElement(AppiumBy.id("com.xueqiu.android:id/banner_image")).click();
-//
-//       webDriverWait.until(webDriver -> {
-//
-//           Set<String> contextHandles = driver.getContextHandles();
-//           logger.info("页面：{}",contextHandles);//[NATIVE_APP]
-//           return contextHandles.contains("WEBVIEW");
-//       });
 
 
-        driver.findElement(By.xpath("//*[@text=\"交易\"]")).click();
+        driver.findElement(By.xpath("//*[@text=\"Dual Webview Demo\"]")).click();
         try {
-            sleep(3000);
+            sleep(2000);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
+
+
+        System.out.println(driver.getPageSource());
+
         Set<String> contextNames = driver.getContextHandles();
         for (String contextName : contextNames) {
             System.out.println(contextName); //prints out something like NATIVE_APP \n WEBVIEW_1
         }
-        System.out.println(contextNames.toArray());
-        System.out.println(contextNames.toArray()[1]);
-        System.out.println(contextNames.toArray()[1].toString());
-        driver.context("WEBVIEW_com.xueqiu.android"); // set context to WEBVIEW_1
+
+
+        System.out.println("----开始切换---");
+        System.out.println(driver.findElements(By.className("android.webkit.WebView")));
+//答案在于 Chromedriver 的工作原理。 Appium 使用 Chromedriver 进行 Chrome 自动化，
+// Chromedriver 通过将它们视为单独的窗口来处理单个 Android 应用程序中的多个 webview。
+// 这意味着我们可以使用内置的 Webdriver 窗口命令访问它们，如下所示：
+        driver.context(contextNames.toArray()[1].toString()); // set context to WEBVIEW_1
+        Set<String> windowHandles = driver.getWindowHandles();
+        windowHandles.forEach(s -> System.out.println(s));
+        driver.switchTo().window(windowHandles.toArray()[0].toString());
+
 
 
         System.out.println(driver.getContext());
-        driver.findElement(By.xpath("//*[@class=\"old_trade_home_onsale_2Hw\"]")).click();
+        System.out.println(driver.getPageSource());
+//        List<WebElement> elements = driver.findElements(By.className("android.widget.TextView"));
+//        elements.forEach(
+//                webElement -> System.out.println("app:"+webElement.getText())
+//        );
+        List<WebElement> elements = driver.findElements(By.xpath("//h2"));
 
-
+        elements.forEach(
+                webElement -> System.out.println("web:"+webElement.getText())
+        );
 
     }
 
